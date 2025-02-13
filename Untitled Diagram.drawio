@@ -1,9 +1,104 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
   <diagram name="Page-1" id="BRYX4G3wqrkwyqx0_Nsn">
-    <mxGraphModel>
+    <mxGraphModel dx="794" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="aGzEODZ64LIrxegJsH6e-1" value="ALB" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-2" value="Route53" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.8;entryY=0.075;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="aGzEODZ64LIrxegJsH6e-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="150" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="150" as="sourcePoint" />
+            <mxPoint x="300" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-6" value="EKS" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-7" value="API :&amp;nbsp;&lt;br&gt;&lt;br&gt;users&lt;br&gt;authenricton&lt;br&gt;kafka&lt;br&gt;notification&lt;br&gt;chat&lt;br&gt;messages" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-8" value="S3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="60" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-9" value="images, files" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-10" value="DynamoDb" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="450" y="420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-11" value="messages" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-12" value="RDS postgres (userdata)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-15" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="aGzEODZ64LIrxegJsH6e-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="270" as="sourcePoint" />
+            <mxPoint x="320" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="aGzEODZ64LIrxegJsH6e-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="440" as="sourcePoint" />
+            <mxPoint x="340" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-18" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="370" as="sourcePoint" />
+            <mxPoint x="330" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-20" value="cloudfont" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-21" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="350" as="sourcePoint" />
+            <mxPoint x="130" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-22" value="Autoscaling group" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-23" value="WAF" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-24" value="redis cache" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="540" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-25" value="Security:&amp;nbsp;&lt;br&gt;&lt;br&gt;WAF&lt;br&gt;Data Encyption of EBS volumes and S3&amp;nbsp;&lt;br&gt;AWS Secret manager/Hasicorp vault&lt;br&gt;Cognito - for Signle signon or authrnction with google or facebook" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-26" value="Automation&lt;br&gt;&lt;br&gt;CICD _ Jenkins&lt;br&gt;Terraform - Infra deployment&lt;div&gt;Docker image build&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-27" value="DR :&amp;nbsp;&lt;br&gt;&lt;br&gt;deploy in another region EKS cluster&lt;br&gt;DynamoDb&lt;br&gt;RDS - Mult region replicas&lt;br&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aGzEODZ64LIrxegJsH6e-28" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.189;entryY=1.056;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="aGzEODZ64LIrxegJsH6e-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="415" as="sourcePoint" />
+            <mxPoint x="260" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
